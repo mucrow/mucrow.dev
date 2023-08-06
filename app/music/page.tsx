@@ -1,3 +1,5 @@
+import UnderConstruction from '@/app/UnderConstruction';
+
 export default function Music() {
-  return <p>This is the music page.</p>;
+  return <UnderConstruction>This is the music page.</UnderConstruction>;
 }
