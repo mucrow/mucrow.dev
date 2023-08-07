@@ -4,9 +4,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  /* background-start-rgb is bg-teal-100 from tailwind */
-  --background-start-rgb: 230, 255, 250;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 219, 234, 254;
+  --background-end-rgb: 219, 234, 254;
 }
 
 @media (prefers-color-scheme: dark) {

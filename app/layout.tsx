@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
-import Heading1 from '@/app/Heading1';
+import { Heading1 } from '@/app/Heading';
 
 import '@/app/globals.css'
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="flex min-h-screen flex-col items-center p-24">
+        <main className="flex min-h-screen flex-col items-center p-8">
           <Heading1 />
           {children}
         </main>
