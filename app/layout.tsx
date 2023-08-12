@@ -1,11 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 
 import { Heading1 } from '@/app/Heading';
 
 import '@/app/globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'mucrow.dev',
@@ -19,9 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main className="flex min-h-screen flex-col items-center p-8">
-          <Heading1 />
+      <body>
+        <header>
+          <a href="/">mucrow.dev</a>
+        </header>
+        <main>
           {children}
         </main>
       </body>
