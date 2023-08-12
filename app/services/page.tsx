@@ -54,7 +54,7 @@ export default function Services() {
       <p>To inquire about commissions, please <Link href="https://example.com" target="_blank">send me an email</Link>, <Link href="https://example.com" target="_blank">add me as a friend on Discord</Link>, or <Link href="https://example.com" target="_blank">direct message me on Twitter</Link>.</p>
       <p>I&apos;m happy to answer any questions you have, even if you&apos;re just curious about my services.</p>
       <p>Here is my typical commission process:</p>
-      <ol>
+      <ol className="pl-2 list-decimal list-inside">
         <li>You provide me with a description of what you want.</li>
         <li>I take a short time to evaluate the commission, and then I tell you what the price and delivery date of the service will be.</li>
         <li>If it sounds like a good deal to you, I get started and bring you a work in progress some time before the delivery date.</li>
