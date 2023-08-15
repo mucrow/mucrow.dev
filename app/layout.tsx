@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 
-import { Heading1 } from '@/app/Heading';
-
 import '@/app/globals.css'
 
 export const metadata: Metadata = {
@@ -18,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <header>
-          <a href="/">mucrow.dev</a>
+          <a className="homepage-link unstyle" href="/">mucrow.dev</a>
         </header>
         <main>
           {children}
