@@ -10,7 +10,11 @@
   --font-family-mono: 'JetBrains Mono', monospace;
 
   --font-size-200: 18px;
-  --font-size-700: 90px;
+  --font-size-300: 20px;
+  --font-size-400: 24px;
+  --font-size-500: 32px;
+  --font-size-600: 42px;
+  --font-size-700: 70px;
 
   --line-height: 23px;
 
@@ -55,15 +59,27 @@ a:active:not(.unstyle), a:focus:not(.unstyle), a:hover:not(.unstyle) {
 }
 
 h1 {
+  font-size: var(--font-size-600);
   margin: 16px 0 8px;
 }
 
 h2 {
+  font-size: var(--font-size-500);
   margin: 28px 0 6px;
 }
 
 h3 {
+  font-size: var(--font-size-400);
   margin: 20px 0 4px;
+}
+
+h4 {
+  font-size: var(--font-size-300);
+  margin: 18px 0 2px;
+}
+
+p, ul, ol {
+  margin-bottom: 8px;
 }
 
 header {
