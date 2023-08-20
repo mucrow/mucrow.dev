@@ -3,6 +3,7 @@
 :root {
   --color-black: #000000;
   --color-blue-200: #1100ff;
+  --color-blue-700: #daf0ff;
   --color-white: #ffffff;
 
   --font-family-sans-serif: 'Fira Sans', sans-serif;
@@ -11,35 +12,31 @@
 
   --font-size-200: 18px;
   --font-size-300: 20px;
-  --font-size-400: 24px;
-  --font-size-500: 32px;
-  --font-size-600: 42px;
+  --font-size-400: 28px;
+  --font-size-500: 36px;
+  --font-size-600: 46px;
   --font-size-700: 70px;
 
-  --line-height: 23px;
+  --line-height: 26px;
 
   --max-width: 1100px;
 }
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html,
 body {
+  margin: 0;
   max-width: 100vw;
   overflow-x: hidden;
+  padding: 0;
 }
 
 html {
   font-family: var(--font-family-sans-serif);
   font-size: var(--font-size-200);
-}
-
-p {
-  line-height: var(--line-height);
 }
 
 a:not(.unstyle) {
@@ -65,21 +62,37 @@ h1 {
 
 h2 {
   font-size: var(--font-size-500);
-  margin: 28px 0 6px;
+  margin: 38px 0 6px;
 }
 
 h3 {
+  background-color: var(--color-blue-700);
   font-size: var(--font-size-400);
-  margin: 20px 0 4px;
+  font-weight: 400;
+  margin: 30px 0 4px;
 }
 
 h4 {
   font-size: var(--font-size-300);
-  margin: 18px 0 2px;
+  margin: 20px 0 2px;
 }
 
-p, ul, ol {
+p {
+  margin: 0 0 16px;
+  line-height: var(--line-height);
+}
+
+ul, ol {
   margin-bottom: 8px;
+  padding-left: 27px;
+}
+
+ul ul, ul ol, ol ul, ol ol {
+  padding-left: 40px;
+}
+
+li {
+  margin: 4px 0 4px;
 }
 
 header {
@@ -92,4 +105,11 @@ header {
   font-size: var(--font-size-700);
   font-weight: bold;
   text-decoration: none;
+}
+
+.page-type-article {
+  box-sizing: content-box;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 32px;
 }
