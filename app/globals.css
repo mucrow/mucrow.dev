@@ -4,6 +4,7 @@
   --color-black: #000000;
   --color-blue-200: #1100ff;
   --color-blue-700: #daf0ff;
+  --color-gray-600: #dfdfdf;
   --color-white: #ffffff;
 
   --font-family-sans-serif: 'Fira Sans', sans-serif;
@@ -20,6 +21,8 @@
   --line-height: 26px;
 
   --max-width: 1100px;
+
+  --transition-snappy: 0.3s ease-out;
 }
 
 * {
@@ -43,16 +46,22 @@ a:not(.unstyle) {
   /* Specify height so border-box can actually adjust for hover border-bottom */
   height: var(--line-height);
 
-  background: #ddd;
+  background-color: var(--color-gray-600);
+  border-color: var(--color-gray-600);
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 2px;
   color: var(--color-blue-200);
   display: inline-block;
   font-weight: bold;
-  padding: 0 8px;
+  margin: 0 2px;
+  padding: 0 4px;
   text-decoration: none;
+  transition: border-color var(--transition-snappy);
 }
 
 a:active:not(.unstyle), a:focus:not(.unstyle), a:hover:not(.unstyle) {
-  border-bottom: 2px solid var(--color-blue-200);
+  border-color: var(--color-blue-200);
 }
 
 h1 {
