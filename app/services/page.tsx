@@ -1,6 +1,8 @@
+import Article from "@/components/Article";
+
 export default function Services() {
   return (
-    <>
+    <Article>
       <h1>Lessons and Commissions</h1>
       <p>I am a programmer and teacher with lots of professional experience. I also know a thing or two about making music for video games.</p>
       <p>As of 2023, I offer a range of services to make my expertise available to others.</p>
@@ -62,7 +64,7 @@ export default function Services() {
         <li>I message you that the work is finished on the delivery date.</li>
         <li>You send payment via Paypal and receive the final product. Thank you for your patronage!</li>
       </ol>
-    </>
+    </Article>
   );
 }
 
