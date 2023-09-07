@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Oswald:wght@400;700&family=Source+Sans+3:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
   --color-black: #000000;
   --color-blue-200: #1100ff;
   --color-blue-700: #daf0ff;
   --color-gray-600: #dfdfdf;
+  --color-gray-700: #ebebeb;
   --color-white: #ffffff;
 
-  --font-family-sans-serif: 'Fira Sans', sans-serif;
-  --font-family-serif: 'Times New Roman', serif; /* Unused */
-  --font-family-mono: 'JetBrains Mono', monospace;
+  --font-family-primary: 'Source Sans 3', sans-serif;
+  --font-family-heading: 'Oswald', serif;
+  --font-family-code: 'JetBrains Mono', monospace;
 
   --font-size-200: 18px;
   --font-size-300: 20px;
@@ -38,30 +39,23 @@ body {
 }
 
 html {
-  font-family: var(--font-family-sans-serif);
+  font-family: var(--font-family-primary);
   font-size: var(--font-size-200);
 }
 
 a:not(.unstyle) {
-  /* Specify height so border-box can actually adjust for hover border-bottom */
-  height: var(--line-height);
-
-  background-color: var(--color-gray-600);
-  border-color: var(--color-gray-600);
-  border-radius: 2px;
-  border-style: solid;
-  border-width: 2px;
   color: var(--color-blue-200);
   display: inline-block;
   font-weight: bold;
-  margin: 0 2px;
-  padding: 0 4px;
   text-decoration: none;
-  transition: border-color var(--transition-snappy);
 }
 
 a:active:not(.unstyle), a:focus:not(.unstyle), a:hover:not(.unstyle) {
-  border-color: var(--color-blue-200);
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
 }
 
 h1 {
@@ -71,14 +65,17 @@ h1 {
 
 h2 {
   font-size: var(--font-size-500);
-  margin: 38px 0 6px;
+  margin: 52px 0 6px;
 }
 
 h3 {
-  background-color: var(--color-blue-700);
+  border-color: var(--color-blue-700);
+  border-style: solid;
+  border-width: 4px 0;
   font-size: var(--font-size-400);
   font-weight: 400;
-  margin: 30px 0 4px;
+  line-height: 1.2;
+  margin: 46px 0 8px;
 }
 
 h4 {
@@ -92,7 +89,7 @@ p {
 }
 
 ul, ol {
-  margin-bottom: 8px;
+  margin: 0 0 8px;
   padding-left: 27px;
 }
 
