@@ -28,15 +28,15 @@ export default function CV() {
       >
         <p>
           Designer & developer of a Unity extension enabling the swift creation
-          of audio assets within the editor.
+          of audio assets within the editor. On release, PutSound will be a
+          Unity Asset Store product.
         </p>
         <p>
-          On release, PutSound will be a Unity Asset Store product. This tool
-          relieves the need for creatives and developers to use an external
-          audio application for placeholder sound effects and music. PutSound
-          also aims to facilitate better communication with game audio
-          professionals, as mock audio can be immediately implemented into the
-          game and demoed with its relevant context.
+          This tool relieves the need for creatives and developers to use an
+          external audio application for placeholder sound effects and music.
+          PutSound also aims to facilitate better team communication with game
+          audio professionals, as mock audio can be immediately implemented
+          into the game and demoed with its relevant context.
         </p>
       </CVEntry>
 
@@ -59,8 +59,8 @@ export default function CV() {
         projectName="TypeScript Migration Project"
         companyName="Zappos"
         rolesOnProject={['Operations Manager', 'Project Planner', 'React Developer', 'Technical Writer']}
-        startDate={makeDateForCVEntry(1, 2000)}
-        endDate={makeDateForCVEntry(1, 2000)}
+        startDate={makeDateForCVEntry(2, 2022)}
+        endDate={makeDateForCVEntry(6, 2022)}
       >
         <p>TODO</p>
       </CVEntry>
@@ -82,7 +82,22 @@ export default function CV() {
         startDate={makeDateForCVEntry(3, 2021)}
         endDate={makeDateForCVEntry(9, 2021)}
       >
-        <p>TODO</p>
+        <p>
+          Implemented a complex caching system for product dimension
+          combinations to enable strikethrough styling on buttons for
+          unavailable options.
+        </p>
+        <p>
+          Overcame challenges associated with handling legacy catalog data. New
+          data standards needed to be designed and code was implemented to
+          support migration to new catalog data formats.
+        </p>
+        <p>
+          The system was implemented as a multi-stage A/B test where impact on
+          conversion rate was measured. The new experience only rolled out for
+          part of the product catalog (shoes) and later iterated on to include
+          all on-site products.
+        </p>
       </CVEntry>
 
       <CVEntry
@@ -129,30 +144,52 @@ export default function CV() {
         projectName="Kid's Size Product Variant Linking"
         companyName="Zappos"
         rolesOnProject={['React Developer']}
-        startDate={makeDateForCVEntry(1, 2000)}
-        endDate={makeDateForCVEntry(1, 2000)}
+        startDate={makeDateForCVEntry(5, 2017)}
+        endDate={makeDateForCVEntry(6, 2017)}
       >
-        <p>TODO</p>
+        <p>
+          Implemented a product page widget to associate and link kids products
+          of different age/size ranges, communicating to customers that
+          multiple listings represented the same product, and resolving the
+          back-end issue of storing these ranges as different catalog entries.
+        </p>
+      </CVEntry>
+
+      <CVEntry
+        projectName="6PM Product Page Redesign"
+        companyName="Zappos"
+        rolesOnProject={['React Developer']}
+        startDate={makeDateForCVEntry(11, 2016)}
+        endDate={makeDateForCVEntry(3, 2017)}
+      >
+        <p>
+          Authored a complete redesign for product pages on Zappos&apos;
+          liquidation channel and sister site
+          {' '}
+          <a href="https://www.6pm.com/">6pm.com</a>.
+        </p>
+        <p>
+          Redesign was implemented as an A/B test which measured impact on
+          customer conversion and other metrics.
+        </p>
       </CVEntry>
 
       <CVEntry
         projectName="Customer Survey Application"
         companyName="Zappos"
         rolesOnProject={['Elixir Developer']}
-        startDate={makeDateForCVEntry(1, 2000)}
-        endDate={makeDateForCVEntry(1, 2000)}
+        startDate={makeDateForCVEntry(6, 2016)}
+        endDate={makeDateForCVEntry(10, 2016)}
       >
-        <p>TODO</p>
-      </CVEntry>
-
-      <CVEntry
-        projectName="6PM.com Redesign"
-        companyName="Zappos"
-        rolesOnProject={['React Developer']}
-        startDate={makeDateForCVEntry(1, 2000)}
-        endDate={makeDateForCVEntry(1, 2000)}
-      >
-        <p>TODO</p>
+        <p>
+          Maintained a bespoke, in-house customer survey application written in
+          Elixir using the Phoenix web framework.
+        </p>
+        <p>
+          Authored upgrades to administrative UI to enable new data types and
+          survey structures to be configured by others in the company for
+          response by main website customers.
+        </p>
       </CVEntry>
 
       <CVEntry
