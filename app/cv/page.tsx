@@ -1,7 +1,6 @@
 import Article from '@/components/Article';
 import CVEntry, { makeDateForCVEntry } from '@/components/CVEntry';
 
-
 export default function CV() {
   return (
     <Article>
@@ -62,17 +61,55 @@ export default function CV() {
         startDate={makeDateForCVEntry(2, 2022)}
         endDate={makeDateForCVEntry(6, 2022)}
       >
+        {/*
+          - make plan to migrate codebase from javascript incrementally
+            - APIs -> models -> reducers -> actions -> components -> containers
+          - communicate new processes
+          - mentor junior developers on typescript
+        */}
         <p>TODO</p>
       </CVEntry>
 
       <CVEntry
-        projectName="Git Flow"
+        projectName="SDLC Improvement Project"
         companyName="Zappos"
         rolesOnProject={['Jenkins CI Programmer', 'Operations Manager', 'Project Planner', 'Technical Writer']}
         startDate={makeDateForCVEntry(5, 2021)}
         endDate={makeDateForCVEntry(2, 2022)}
       >
-        <p>TODO</p>
+        <p>
+          This project was started to make high impact improvements to the
+          build and release lifecycle at Zappos.
+        </p>
+        <p>All of the problems listed below were solved by this project:</p>
+        <ul>
+          <li>
+            Releases were infrequent (improved from once per week to four times
+            per week)
+          </li>
+          <li>Releases were unable to be hotfixed and often rolled back</li>
+          <li>
+            Code could not be merged while the release was being tested and
+            rolled out
+          </li>
+          <li>Developers needed to manually merge their changes</li>
+          <li>
+            Developers needed to manually update their unmerged branches each
+            time another developer&apos;s branch was merged in
+          </li>
+          <li>
+            There were no test environments where in-progress developer changes
+            could be previewed (i.e., no user acceptance testing)
+          </li>
+          <li>
+            Manual QA testing needed to be done in a short window before the
+            release rollout, leading to last-minute release cancellations
+          </li>
+          <li>
+            Release notes and git tagging would need to be done manually after
+            a successful release
+          </li>
+        </ul>
       </CVEntry>
 
       <CVEntry
