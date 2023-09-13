@@ -205,7 +205,7 @@ export default function CV() {
           Authored a complete redesign for product pages on Zappos&apos;
           liquidation channel and sister site
           {' '}
-          <a href="https://www.6pm.com/">6pm.com</a>.
+          <a href="https://www.6pm.com/" target="_blank">6pm.com</a>.
         </p>
         <p>
           Redesign was implemented as an A/B test which measured impact on
