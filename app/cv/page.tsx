@@ -61,13 +61,15 @@ export default function CV() {
         startDate={makeDateForCVEntry(2, 2022)}
         endDate={makeDateForCVEntry(6, 2022)}
       >
-        {/*
-          - make plan to migrate codebase from javascript incrementally
-            - APIs -> models -> reducers -> actions -> components -> containers
-          - communicate new processes
-          - mentor junior developers on typescript
-        */}
-        <p>TODO</p>
+        <p>
+          Performed senior developer duties, planning an incremental codebase
+          migration from JavaScript to Typescript, communicating changes to
+          peers, and mentoring junior developers on new language idioms.
+        </p>
+        <p>
+          Directly translated a significant portion of the customer-facing
+          React website (<a href="https://www.zappos.com" target="_blank">zappos.com</a>) into TypeScript.
+        </p>
       </CVEntry>
 
       <CVEntry
