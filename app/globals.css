@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Oswald:wght@400;700&family=Source+Sans+3:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-  --color-black: #000000;
-  --color-blue-200: #1100ff;
-  --color-blue-700: #daf0ff;
-  --color-gray-600: #dfdfdf;
-  --color-gray-700: #ebebeb;
-  --color-white: #ffffff;
+  --color-palette-black: #000000;
+  --color-palette-blue-200: #1100ff;
+  --color-palette-blue-300: #3c5eff;
+  --color-palette-blue-700: #daf0ff;
+  --color-palette-gray-600: #dfdfdf;
+  --color-palette-gray-700: #ebebeb;
+  --color-palette-white: #ffffff;
+
+  --color-link: var(--color-palette-blue-200);
+  --color-link-focus: var(--color-palette-blue-300);
 
   --font-family-primary: 'Source Sans 3', sans-serif;
   --font-family-heading: 'Oswald', serif;
@@ -44,14 +48,41 @@ html {
 }
 
 a:not(.unstyle) {
-  color: var(--color-blue-200);
+  color: var(--color-link);
   display: inline-block;
   font-weight: bold;
   text-decoration: none;
 }
 
 a:active:not(.unstyle), a:focus:not(.unstyle), a:hover:not(.unstyle) {
+  color: var(--color-link-focus);
   text-decoration: underline;
+}
+
+/** Adds externalLink.png to links with the target attribute set to "_blank". */
+a[target="_blank"]:not(.unstyle):after {
+  /* Keep width and height in sync. */
+  --icon-height: 16px;
+  background-color: var(--color-link);
+  content: '';
+  display: inline-block;
+  height: var(--icon-height);
+  margin: 0 1px 0 4px;
+  mask: url("/externalLink.png");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  vertical-align: middle;
+  width: var(--icon-height);
+}
+
+/**
+ * Focus color consistency for externalLink.png (found on links with
+ * target="_blank")
+ */
+a:active[target="_blank"]:not(.unstyle):after,
+a:focus[target="_blank"]:not(.unstyle):after,
+a:hover[target="_blank"]:not(.unstyle):after {
+  background-color: var(--color-link-focus);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -69,7 +100,7 @@ h2 {
 }
 
 h3 {
-  border-color: var(--color-blue-700);
+  border-color: var(--color-palette-blue-700);
   border-style: solid;
   border-width: 4px 0;
   font-size: var(--font-size-400);
@@ -102,12 +133,12 @@ li {
 }
 
 header {
-  background-color: var(--color-blue-200);
+  background-color: var(--color-palette-blue-200);
   padding: 0 2px;
 }
 
 .homepage-link {
-  color: var(--color-white);
+  color: var(--color-palette-white);
   font-size: var(--font-size-700);
   font-weight: bold;
   text-decoration: none;
